@@ -1,0 +1,69 @@
+1. Get All Patients:
+Method .... Endpoint ....... Reource....... 
+Get - https://stu3.test.pyrohealth.net   - /fhir/Patient/
+
+Raw Request:
+GET https://stu3.test.pyrohealth.net/fhir/Patient/ HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: stu3.test.pyrohealth.net
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.5 (Java/12.0.1)
+
+
+Raw Response:
+HTTP/1.1 200 OK
+Content-Type: application/fhir+json; charset=utf-8
+Content-Encoding: gzip
+Server: Microsoft-IIS/8.5
+X-Powered-By: ASP.NET
+Date: Sat, 16 Jan 2021 10:42:32 GMT
+Content-Length: 28115
+
+{"resourceType":"Bundle","type":"searchset","total":13974,"link":[{"relation":"first","url":"https://stu3.test.pyrohealth.net/fhir/Patient/?page=1"},{"relation":"last","url":"https://stu3.test.pyrohealth.net/fhir/Patient/?page=140"},{"relation":"next","url":"https://stu3.test.pyrohealth.net/fhir/Patient/?page=2"},{"relation":"self","url":"https://stu3.test.pyrohealth.net/fhir/Patient"}],"entry":[{"fullUrl":"https://stu3.test.pyrohealth.net/fhir/Patient/eb25a21f-dbf3-489c-adb4-e3677063a387","resource":{"resourceType":"Patient","id":"eb25a21f-dbf3-489c-adb4-e3677063a387","meta":{"versionId":"1","lastUpdated":"2018-09-05T21:51:36.218+00:00"},"text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Patient: Litke, Brian</p></div>"},"identifier":[{"type":{"coding":[{"system":"http://hl7.org/fhir/v2/0203","code":"NI","display":"National unique individual identifier"}],"text":"IHI"},"system":"http://ns.electronichealth.net.au/id/hi/ihi/1.0","value":"8003608166690503"},{"use":"usual","type":{"coding":[{"system":"http://hl7.org/fhir/v2/0203","code":"MR"}]},"system":"urn:oid:1.2.36.146.595.217.0.1","value":"6666","period":{"start":"2001-05-06"},"assigner":{"display":"Acme Healthcare"}}],"name":[{"use":"official","text":"Lindsay Zimmerman","family":"Zimmerman","given":["Lindsay"],"prefix":["Ms"]}],"telecom":[{"system":"phone","value":"+61481059995","use":"mobile"}],"gender":"male","birthDate":"1973-09-30","address":[{"use":"work","line":["400 George Street"],"city":"Brisbane","state":"QLD","postalCode":"4000","country":"AUS"}],"maritalStatus":{"coding":[{"system":"http://hl7.org/fhir/v3/MaritalStatus","code":"M","display":"Married"}]}},"search":{"mode":"match"}},{"fullUrl":"https://stu3.test.pyrohealth.net/fhir/Patient/5613f374-5575-4176-a151-2d280edd8cd1","resource":{"resourceType":"Patient","id":"5613f374-5575-4176-a151-2d280edd8cd1","meta":{"versionId":"2","lastUpdated":"2018-09-06T13:38:08.128+00:00"},"text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Patient: Fhirman, Sam</p></div>"},"identifier":[{"type":{"coding":[{"system":"http://hl7.org/fhir/v2/0203","code":"NI","display":"National unique individual identifier"}],"text":"IHI"},"system":"http://ns.electronichealth.net.au/id/hi/ihi/1.0","value":"8003608166690503"},{"use":"usual","type":{"coding":[{"system":"http://hl7.org/fhir/v2/0203","code":"MR"}]},"system":"urn:oid:1.2.36.146.595.217.0.1","value":"6666","period":{"start":"2001-05-06"},"assigner":{"display":"Acme Healthcare"}}],"name":[{"use":"official","text":"Luke Skywalker","family":"Skywalker","given":["Luke"],"prefix":["Mr"]}],"telecom":[{"system":"phone","value":"+61481059995","use":"mobile"}],"gender":"male","birthDate":"1973-09-30","address":[{"use":"work","line":["400 George Street"],"city":"Brisbane","state":"QLD","postalCode":"4000","country":"AUS"}],"maritalStatus":{"coding":[{"system":"http://hl7.org/fhir/v3/MaritalStatus","code":"M","display":"Married"}]}},"search":{"mode":"match"}},{"fullUrl":"https://stu3.test.pyrohealth.net/fhir/Patient/8901bbec-32e3-4ed8-b4c8-18899e11915f","resource":{"resourceType":"Patient","id":"8901bbec-32e3-4ed8-b4c8-18899e11915f","meta":{"versionId":"1","lastUpdated":"2018-09-06T15:48:07.13+00:00"},"text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Patient: Parker, Shawntel</p></div>"},"identifier":[{"type":{"coding":[{"system":"http://hl7.org/fhir/v2/0203","code":"NI","display":"National unique individual identifier"}],"text":"IHI"},"system":"http://ns.electronichealth.net.au/id/hi/ihi/1.0","value":"8003608166690503"},{"use":"usual","type":{"coding":[{"system":"http://hl7.org/fhir/v2/0203","code":"MR"}]},"system":"urn:oid:1.2.36.146.595.217.0.1","value":"6666","period":{"start":"2001-05-06"},"assigner":{"display":"Acme Healthcare"}}],"name":[{"use":"official","text":"Sam Fhirman","family":"Parker","given":["Shawntel"],"prefix":["Mr"]}],"telecom":[{"system":"phone","value":"+61481059995","use":"mobile"}],"gender":"male","birthDate":"1973-09-30","address":[{"use":"work","line":["400 George Street"],"city":"Brisbane","state":"QLD","postalCode":"4000","country":"AUS"}],"maritalStatus":{"coding":[{"system":"http://hl7.org/fhir/v3/MaritalStatus","code":"M","display":"Married"}]}},"search":{"mode":"match"}},{"fullUrl":"https://stu3.test.pyrohealth.net/fhir/Patient/aea15401-098c-4dd2-967d-178d6d461830","resource":{"resourceType":"Patient","id":"aea15401-098c-4dd2-967d-178d6d461830","meta":{"versionId":"1","lastUpdated":"2018-09-11T03:34:28.724+00:00"},"identifier":[{"system":"http://ns.electronichealth.net.au/id/hi/ihi/1.0","value":"8003608166690503"}],"name":[{"use":"official","family":"Hiriko","given":["Yamaguchi"],"prefix":["Mr"]}],"gender":"male","birthDate":"1987-02-20"},"search":{"mode":"match"}},{"fullUrl":"https://stu3.test.pyrohealth.net/fhir/Patient/69a8aaa4-1fb4-439d-97a8-3979d2aa6a64","resource":{"resourceType":"Patient","id":"69a8aaa4-1fb4-439d-97a8-3979d2aa6a64","meta":{"versionId":"1","lastUpdated":"2018-09-12T14:45:59.282+00:00"},"identifier":[{"system":"https://fhir.nhs.uk/Id/nhs-number","value":"1111"},{"system":"urn:oid:2.16.840.1.113883.2.1.8.1.3.140","value":"X22222"}],"active":true,"name":[{"family":"Millar","given":["Gus"]}],"gender":"female","birthDate":"1986-05-02","address":[{"line":["100 Sophia Road"],"city":"Cardiff","postalCode":"CF9 8XX","country":"UK"}]},"search":{"mode":"match"}},{"fullUrl":"https://stu3.test.pyrohealth.net/fhir/Patient/Test2222","resource":{"resourceType":"Patient","id":"Test2222","meta":{"versionId":"1","lastUpdated":"2018-09-13T08:42:45.662+00:00"},"identifier":[{"system":"https://fhir.nhs.uk/Id/nhs-number","value":"2222"},{"system":"urn:oid:2.16.840.1.113883.2.1.8.1.3.140","value":"X22222"}],"active":true,"name":[{"family":"Millar","given":["Gus"]}],"gender":"female","birthDate":"1986-05-02","address":[{"line":["100 Sophia Road"],"city":"Cardiff","postalCode":"CF9 8XX","country":"UK"}]},"search":{"mode":"match"}},{"fullUrl":"https://stu3.test.pyrohealth.net/fhir/Patient/98fa97b9-6f51-4470-a298-3eed3d33a761","resource":{"resourceType":"Patient","id":"98fa97b9-6f51-4470-a298-3eed3d33a761","meta":{"versionId":"1","lastUpdated":"2018-09-13T16:02:13.903+00:00"},"text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Patient: Fhirman, Sam</p></div>"},"identifier":[{"type":{"coding":[{"system":"http://hl7.org/fhir/v2/0203","code":"NI","display":"National unique individual identifier"}],"text":"IHI"},"system":"http://ns.electronichealth.net.au/id/hi/ihi/1.0","value":"8003608166690503"},{"use":"usual","type":{"coding":[{"system":"http://hl7.org/fhir/v2/0203","code":"MR"}]},"system":"urn:oid:1.2.36.146.595.217.0.1","value":"6666","period":{"start":"2001-05-06"},"assigner":{"display":"Acme Healthcare"}}],"name":[{"use":"official","text":"Sam Fhirman","family":"HÃ¼sers","given":["Jens"],"prefix":["Mr"]}],"telecom":[{"system":"phone","value":"+61481059995","use":"mobile"}],"gender":"male","birthDate":"1973-09-30","address":[{"use":"work","line":["400 George Street"],"city":"Brisbane","state":"QLD","postalCode":"4000","country":"AUS"}],"maritalStatus":{"coding":[{"system":"http://hl7.org/fhir/v3/MaritalStatus","code":"M","display":"Married"}]}},"search":{"mode":"match"}},{"fullUrl":"https://stu3.test.pyrohealth.net/fhir/Patient/1b0388a8-145e-4e89-92b8-06a21089461e","resource":{"resourceType":"Patient","id":"1b0388a8-145e-4e89-92b8-06a21089461e","meta":{"versionId":"1","lastUpdated":"2018-09-17T09:49:45.147+00:00","profile":["http://standardhealthrecord.org/fhir/StructureDefinition/shr-demographics-PersonOfRecord"]},"text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated by <a href=\"https://github.com/synthetichealth/synthea\">Synthea</a>. Version identifier: de2854124dce802692c2bb402371761b3d953269</div>"},"extension":[{"url":"http://hl7.org/fhir/us/core/StructureDefinition/us-core-race","valueCodeableConcept":{"coding":[{"system":"http://hl7.org/fhir/v3/Race","code":"2106-3","display":"White"}],"text":"race"}},{"url":"http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity","valueCodeableConcept":{"coding":[{"system":"http://hl7.org/fhir/v3/Ethnicity","code":"2186-5","display":"Nonhispanic"}],"text":"ethnicity"}},{"url":"http://hl7.org/fhir/StructureDefinition/birthPlace","valueAddress":{"city":"Scituate","state":"MA","country":"US"}},{"url":"http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName","valueString":"Kristan85 Wolff781"},{"url":"http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex","valueCode":"M"},{"url":"http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired","valueBoolean":false},{"url":"http://standardhealthrecord.org/fhir/StructureDefinition/shr-actor-FictionalPerson-extension","valueBoolean":true},{"url":"http://standardhealthrecord.org/fhir/StructureDefinition/shr-demographics-FathersName-extension","valueHumanName":{"text":"Noe533 Langworth339"}},{"url":"http://standardhealthrecord.org/fhir/StructureDefinition/shr-demographics-SocialSecurityNumber-extension","valueString":"999-37-6948"}],"identifier":[{"system":"https://github.com/synthetichealth/synthea","value":"4852acde-9251-454a-bd0d-e0cb5be737f9"},{"type":{"coding":[{"system":"http://hl7.org/fhir/identifier-type","code":"SB"}]},"system":"http://hl7.org/fhir/sid/us-ssn","value":"999376948"},{"type":{"coding":[{"system":"http://hl7.org/fhir/v2/0203","code":"DL"}]},"system":"urn:oid:2.16.840.1.113883.4.3.25","value":"S99978123"},{"type":{"coding":[{"system":"http://hl7.org/fhir/v2/0203","code":"PPN"}]},"system":"http://standardhealthrecord.org/fhir/StructureDefinition/passportNumber","value":"X46656854X"},{"type":{"coding":[{"system":"http://hl7.org/fhir/v2/0203","code":
+
+
+2. Get Single Patient
+Method .... Endpoint ....... Reource....... 
+GET - https://stu3.test.pyrohealth.net  -- /fhir/Patient/04c65eab-838d-4288-9299-067d063b64f2
+
+Raw Request:
+GET https://stu3.test.pyrohealth.net/fhir/Patient/04c65eab-838d-4288-9299-067d063b64f2 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: stu3.test.pyrohealth.net
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.5 (Java/12.0.1)
+
+Raw Response:
+HTTP/1.1 200 OK
+Content-Type: application/fhir+json; charset=utf-8
+Content-Encoding: gzip
+Last-Modified: Sat, 16 Jan 2021 10:46:43 GMT
+ETag: W/"1"
+Location: https://stu3.test.pyrohealth.net/fhir/Patient/04c65eab-838d-4288-9299-067d063b64f2
+Server: Microsoft-IIS/8.5
+X-Powered-By: ASP.NET
+Date: Sat, 16 Jan 2021 10:47:05 GMT
+Content-Length: 661
+
+{"resourceType":"Patient","id":"04c65eab-838d-4288-9299-067d063b64f2","meta":{"versionId":"1","lastUpdated":"2021-01-16T10:46:43.849+00:00"},"text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Patient: Fhirman1, Sam1</p></div>"},"identifier":[{"type":{"coding":[{"system":"http://hl7.org/fhir/v2/0203","code":"NI","display":"National unique individual identifier"}],"text":"IHI"},"system":"http://ns.electronichealth.net.au/id/hi/ihi/1.0","value":"8003608166690503"},{"use":"usual","type":{"coding":[{"system":"http://hl7.org/fhir/v2/0203","code":"MR"}]},"system":"urn:oid:1.2.36.146.595.217.0.1","value":"6666","period":{"start":"2001-05-06"},"assigner":{"display":"Acme Healthcare"}}],"name":[{"use":"official","text":"Sam Fhirman","family":"Fhirman","given":["Sam1"],"prefix":["Mr"]}],"telecom":[{"system":"phone","value":"+71481059995","use":"mobile"}],"gender":"male","birthDate":"1973-09-30","address":[{"use":"work","line":["400 George Street"],"city":"Brisbane","state":"QLD","postalCode":"4000","country":"AUS"}],"maritalStatus":{"coding":[{"system":"http://hl7.org/fhir/v3/MaritalStatus","code":"M","display":"Married"}]}}
+
+3. Update Patient
+Method .... Endpoint ....... Reource....... 
+PUT - https://stu3.test.pyrohealth.net - /fhir/Patient/04c65eab-838d-4288-9299-067d063b64f2
+Raw Request:
+
+Raw Response:
+
+4. Add New Patient
+Method .... Endpoint ....... Reource....... 
+
+Raw Request:
+
+Raw Response:
+
+5. Delete Patient
+Method .... Endpoint ....... Reource....... 
+
+Raw Request:
+
+Raw Response:
